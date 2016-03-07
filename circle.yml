@@ -4,5 +4,4 @@ machine:
 
 checkout:
   post:
-    *****
     - pip install -U pip setuptools virtualenv
