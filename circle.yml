@@ -5,3 +5,9 @@ machine:
 checkout:
   post:
     - pip install -U pip setuptools virtualenv
+
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: g-string-remedium
