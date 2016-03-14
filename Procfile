@@ -1,1 +1,1 @@
-web: gunicorn remedium.wsgi --log-file -
+web: gunicorn remedium.wsgi --pythonpath ../remedium --log-file -
