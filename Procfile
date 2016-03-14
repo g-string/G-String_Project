@@ -1,0 +1,1 @@
+web: gunicorn remedium.wsgi --log-file -
