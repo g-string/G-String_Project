@@ -1,1 +1,1 @@
-web: gunicorn remedium.wsgi
+web: gunicorn remedium.wsgi:application
