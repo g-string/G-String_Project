@@ -1,0 +1,3 @@
+# Default behaviour
+* text eol=lf
+*.* text=auto
