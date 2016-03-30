@@ -1,7 +1,19 @@
 {% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Remedium </title>
 
-{% include "navbar.html" %}
+    <link href="{% static 'default/css/bootstrap.min.css' %}" rel="stylesheet">
+  </head>
 
-{% block content %}
+  {% include "navbar.html" %}
 
-{% endblock content %}
+  {% block content %}
+
+  {% endblock content %}
+
+  <script src="{% static 'default/js/bootstrap.min.js' %}"></script>
+
+</html>
