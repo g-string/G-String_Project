@@ -110,3 +110,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Compression and caching
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+# Dummy cache
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
+    }
+}
