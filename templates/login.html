@@ -8,6 +8,9 @@
       {% csrf_token %}
       {{ form }}
       <input type="submit" value="Login" class="btn btn-block btn-primary">
+    </form>
+    <form action="/login/test/" method="post">
+      {% csrf_token %}
       <input type="submit" value="Login as testuser" class="btn btn-block btn-default">
     </form>
   </div>

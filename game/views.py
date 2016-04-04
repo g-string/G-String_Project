@@ -17,3 +17,7 @@ def login(request):
         form = LoginForm()
 
     return render(request, "login.html", {'form':form})
+
+def game(request):
+
+    return render(request, "game.html", {})
