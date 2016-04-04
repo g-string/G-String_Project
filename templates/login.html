@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row container-fluid">
+  <div class="col-md-4"> </div>
+  <div class="col-md-4">
+    <form action="/login/" method="post">
+      {% csrf_token %}
+      {{ form }}
+      <input type="submit" value="Login" class="btn btn-block btn-primary">
+      <input type="submit" value="Login as testuser" class="btn btn-block btn-default">
+    </form>
+  </div>
+</div> <!-- row -->
+{% endblock content %}

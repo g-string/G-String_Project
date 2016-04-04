@@ -17,5 +17,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', 'game.views.settings', name='settings'),
+    url(r'^$', 'game.views.login', name='login'),
+    url(r'^login/', 'game.views.login', name='login'),
+    url(r'^settings/', 'game.views.settings', name='settings'),
 ]
