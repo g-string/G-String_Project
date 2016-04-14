@@ -1,4 +1,5 @@
 Django==1.8.9
+django-crispy-forms==1.6.0
 gunicorn==19.4.5
 PyMySQL==0.7.2
 whitenoise==3.0

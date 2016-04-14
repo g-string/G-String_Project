@@ -1,18 +1,16 @@
 {% extends "base.html" %}
 
+{% load crispy_forms_tags %}
+
 {% block content %}
-<div class="row container-fluid">
-  <div class="col-md-4"> </div>
-  <div class="col-md-4">
-    <form action="/login/" method="post">
+<div class="row">
+  <div class="col-md-offset-4 col-xs-offset-1 col-md-4 col-xs-10">
+    <form action="/login/" method="post" class="form-signin">
       {% csrf_token %}
-      {{ form }}
+      {{ form|crispy }}
       <input type="submit" value="Login" class="btn btn-block btn-primary">
     </form>
-    <form action="/login/test/" method="post">
-      {% csrf_token %}
-      <input type="submit" value="Login as testuser" class="btn btn-block btn-default">
-    </form>
+    <a href="/game/" class="btn btn-block btn-link"> Sign in as testuser </a>
   </div>
 </div> <!-- row -->
 {% endblock content %}

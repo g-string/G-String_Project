@@ -6,6 +6,10 @@ checkout:
   post:
     - pip install -U pip setuptools virtualenv
 
+test:
+  override:
+    - echo "No tests to run, check 'circle.yml'"
+
 deployment:
   staging:
     branch: master

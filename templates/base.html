@@ -6,14 +6,16 @@
     <title> Remedium </title>
 
     <link href="{% static 'default/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'default/css/test.css' %}" rel="stylesheet">
   </head>
 
   {% include "navbar.html" %}
+  <div class="container-fluid">
+    {% block content %}
 
-  {% block content %}
-
-  {% endblock content %}
-
+    {% endblock content %}
+  </div> <!-- /container-fluid -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="{% static 'default/js/bootstrap.min.js' %}"></script>
 
 </html>
