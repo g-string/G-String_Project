@@ -20,4 +20,5 @@ urlpatterns = [
     url(r'^$', 'game.views.login', name='login'),
     url(r'^game/', 'game.views.game', name='game'),
     url(r'^quiz/', include('quiz.urls')),
+    url(r'^menu/', 'game.views.mainmenu', name='menu'),
 ]

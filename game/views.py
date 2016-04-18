@@ -4,6 +4,9 @@ from django.shortcuts import render
 from .models import Brand, ActiveSubstance, Classification, Medicine, ActiveSubstances
 from .forms import LoginForm
 
+def mainmenu(request):
+    return render(request, "mainmenu.html", {})
+
 def settings(request):
 
     return render(request, "settings.html", {})
@@ -13,7 +16,7 @@ def login(request):
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
-            return HttpResponseRedirect('/settings/')
+            return HttpResponseRedirect('/menu/')
     else:
         form = LoginForm()
 
