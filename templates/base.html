@@ -8,7 +8,7 @@
     <link href="{% static 'default/css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'default/css/test.css' %}" rel="stylesheet">
   </head>
-
+  <body style="background-image: url({% static 'default/backgroundimage.png' %})">
   {% include "navbar.html" %}
   <div class="container-fluid">
     {% block content %}
@@ -17,5 +17,5 @@
   </div> <!-- /container-fluid -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="{% static 'default/js/bootstrap.min.js' %}"></script>
-
+</body>
 </html>
