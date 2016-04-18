@@ -24,4 +24,4 @@ def game(request):
     for e in ActiveSubstance.objects.using('medicin').all():
         print(e.substance)
         test += e.substance + " "
-    return render(request, "game.html", {'test' : test})
+    return render(request, "newgame.html", {'test' : test})
