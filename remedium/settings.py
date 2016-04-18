@@ -42,6 +42,10 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'crispy_forms',
     'game',
+    'quiz',
+    'multichoice',
+    'true_false',
+    'essay',
 )
 
 MIDDLEWARE_CLASSES = (

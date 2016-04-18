@@ -16,7 +16,8 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    #url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'game.views.login', name='login'),
     url(r'^game/', 'game.views.game', name='game'),
+    url(r'^quiz/', include('quiz.urls')),
 ]
